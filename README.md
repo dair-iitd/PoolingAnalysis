@@ -27,7 +27,7 @@ Results are at model_dir/ratios.txt
 ```
 python train.py --pool att_max --data_size 20K --gpu_id 0 --mode train --batch_size 32 --task IMDB_LONG --wiki mid --epochs 20 --log 1 --customlstm 0
 ```
-Logs are at model_dir/logs.txt
+Logs are at `model_dir/logs.txt`
 
 ## Bias Evaluation
 
@@ -39,4 +39,17 @@ python test.py --pool att_max --data_size 20K --gpu_id 0 --mode test --batch_siz
 ### Get the NWI scores
 ```
 python test.py --pool att_max --data_size 20K --gpu_id 0 --mode test --batch_size 32 --task IMDB_LONG --wiki none --NWI 1 --customlstm 0
+```
+
+## How can I cite this work?
+```
+@inproceedings{maini2020pool,
+    title = "Why and when should you pool? Analyzing Pooling in Recurrent Architectures",
+    author = "Maini, Pratyush and Kolluru, Keshav and Pruthi, Danish and {Mausam}",
+    booktitle = "Findings of the Association for Computational Linguistics: EMNLP 2020",
+    year = "2020",
+    address = "Online",
+    publisher = "Association for Computational Linguistics",
+    url = "https://www.aclweb.org/anthology/2020.findings-emnlp.410",
+}
 ```
